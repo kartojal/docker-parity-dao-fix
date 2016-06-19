@@ -2,10 +2,10 @@ FROM ubuntu:14.04
 MAINTAINER David Canillas
 
 RUN apt-get update && \
-	apt-get install -y \
+    apt-get install -y \
     g++ \
-	  curl \
-  	git 
+    curl \
+    git 
 
 # Clone ethcote/parity with the softforktrigger branch
 RUN git clone -b softforktrigger https://github.com/ethcore/parity.git /root/parity
